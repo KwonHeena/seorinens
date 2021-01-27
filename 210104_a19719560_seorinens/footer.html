@@ -1,0 +1,74 @@
+<footer>
+    <div class="footer-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 foot-logo">
+                    <img src="/public/img/logo/footer.png" alt="" class="img-responsive center-block">
+                </div>
+                <div class="col-sm-10">
+                    <ul>
+                        <li><strong>(주)서린환경과학</strong></li>
+                        <li>서울 금천구 서부샛길 606, A동 1511-1호 (대성디폴리스지식산업센터)</li>
+
+                        <div class="clearfix"></div>
+                        <li>대표번호: 031-8043-2686</li>
+                        <li>팩스번호: 031-8039-4960</li><br>
+                        <li class="copy">©seorinens Inc. All rights reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<ul class="dropdown-menu about_sub">
+    <li>
+        <a href="/page/about01">인사말</a>
+    </li>
+    <li>
+        <a href="/page/about02">조직도 · 연혁</a>
+    </li>
+</ul>
+<ul class="dropdown-menu intro_sub">
+    <li>
+        <a href="/page/intro01">오수,폐수,중수처리시설 유지관리</a>
+    </li>
+    <li>
+        <a href="/page/intro02">오수처리시설 설계시공</a>
+    </li>
+    <li>
+        <a href="/page/intro03">폐수처리시설 설계시공</a>
+    </li>
+    <li>
+        <a href="/page/intro04">중수처리시설 설계시공</a>
+    </li>
+    <li>
+        <a href="/page/intro05">오수,중수,폐수처리시설 관래대행</a>
+    </li>
+</ul>
+<ul class="dropdown-menu business_snb">
+    <li>
+        <a href="/page/business">사업실적</a>
+    </li>
+</ul>
+</ul>
+<ul class="dropdown-menu bbs_snb">
+    <li>
+        <a href="/board/list?bd_id=bbs01">공지사항</a>
+    </li>
+    <li>
+        <a href="/form/write?frm_id=bbs02">견적의뢰서</a>
+    </li>
+</ul>
+<script>
+    $(function () {
+        //bbs shift
+        if ($('.bbs-area').length) {
+            $('.board_wrapper, .search_wrap,.calendar_wrapper, .pagination_wrap').appendTo('.bbs-area').css(
+                'visibility', 'visible');
+        }
+        $('.about_sub').appendTo('.about .breadcrumb .dropdown');
+        $('.intro_sub').appendTo('.intro .breadcrumb .dropdown');
+        $('.business_snb').appendTo('.business .breadcrumb .dropdown');
+        $('.bbs_snb').appendTo('.bbs .breadcrumb .dropdown');
+    });
+</script>
